@@ -1,6 +1,11 @@
 name: learn-github-actions
 on: [push]
 jobs:
+  run cypress:
+    steps:
+     - uses: actions/checkout@v3
+     - run : npm i
+     - run : npm run cypress:open
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
