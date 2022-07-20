@@ -1,11 +1,10 @@
-//// <reference types="cypress" />
-/// <reference path="../support/index.d.ts" />
+/// <reference types="cypress" />
 
 Cypress.Commands.add('getTokenUser', () => {
-  console.log(Cypress.env('endpoint'))
+  console.log(123)
   cy.request({
     method: 'POST',
-    url: `${Cypress.env("endpoint")}/jwt-auth/v1/token`,
+    url: `${Cypress.env("baseUrl")}/jwt-auth/v1/token`,
     headers: {'Content-Type': 'application/json'},
     body: {
       username: `${Cypress.env('username')}`,

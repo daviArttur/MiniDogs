@@ -1,0 +1,11 @@
+{
+  "endpoint": "/jwt-auth/v1/token",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+  },
+  "body": {
+    "username": "",
+    "password": ""
+  }
+}
