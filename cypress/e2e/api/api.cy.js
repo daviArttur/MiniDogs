@@ -5,7 +5,7 @@ describe('Testing full APIs', () => {
   it('login user', () => {
     
     cy.getTokenUser().should(() => {
-      const token = JSON.parse(window.localStorage.getItem('token'))
+      const token = JSON.parse(window.localStorage.getItem('tokens'))
       cy.request({
         method: 'GET',
         url: `${Cypress.env('endpoint')}/api/user`,
