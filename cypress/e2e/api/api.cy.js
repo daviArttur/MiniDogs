@@ -1,5 +1,5 @@
 describe('Testing full APIs', () => {
-  it.only('get token user', () => {
+  it('get token user', () => {
     cy.getTokenUser()
   }),
   it('login user', () => {
